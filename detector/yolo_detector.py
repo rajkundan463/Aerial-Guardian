@@ -11,6 +11,7 @@ class YOLODetector:
             frame,
             conf=self.conf,
             imgsz=self.imgsz,
-            classes=[0]  # person only
+            classes=[0],     # person only
+            verbose=False    # clean terminal
         )
         return results
